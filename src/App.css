@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  height: inherit;
+}
+
+.card img {
+  width: 100%;
+  height: 84%;
+  overflow: hidden;
+}
+
+.card > .card-body {
+  height: 100%;
+  overflow: auto;
+}
+
+.img-view {
+background-repeat: no-repeat;
+background-position: center center;
+width: 100%;
+height: calc(100vh - 120px);
+background-size: cover;
+overflow: hidden;
+}
+
+.img-cont {
+  position: absolute;
+  background-color: #656464;
+  top: 0px;
+  padding: 50px;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+}
+
+.img-cont > span {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+}
+
+img {
+  border: 4px solid #5ac1af;
+  border-radius: 4px;
+}
+
+.cont:hover {
+ box-shadow:  1px 6px 11px 2px #c5d8d7
+}
